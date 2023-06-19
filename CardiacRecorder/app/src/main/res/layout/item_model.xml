@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/card"
+    android:layout_marginBottom="10dp">
 
     <GridLayout
         android:layout_width="match_parent"
@@ -39,11 +41,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
-                    android:background="#81B383"
+                    android:background="#2A666E"
                     android:padding="5dp"
                     android:text="Systolic Pressure (mm-Hg)"
                     android:textAlignment="center"
-                    android:textColor="#411988"
+                    android:textColor="#FFFFFF"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
@@ -86,11 +88,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
-                    android:background="#81B383"
+                    android:background="#2A666E"
                     android:padding="5dp"
                     android:text="Diastolic Pressure (mm-Hg)"
                     android:textAlignment="center"
-                    android:textColor="#411988"
+                    android:textColor="#FFFFFF"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
@@ -133,11 +135,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
-                    android:background="#81B383"
+                    android:background="#2A666E"
                     android:padding="5dp"
                     android:text="Heart Rate (beats/min)"
                     android:textAlignment="center"
-                    android:textColor="#411988"
+                    android:textColor="#FFFFFF"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
@@ -180,11 +182,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
-                    android:background="#81B383"
+                    android:background="#2A666E"
                     android:padding="5dp"
                     android:text="Comment"
                     android:textAlignment="center"
-                    android:textColor="#411988"
+                    android:textColor="#FFFFFF"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
@@ -233,11 +235,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
-                    android:background="#81B383"
+                    android:background="#2A666E"
                     android:padding="5dp"
                     android:text="Date (dd-mm-yyyy)"
                     android:textAlignment="center"
-                    android:textColor="#411988"
+                    android:textColor="#FFFFFF"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
@@ -280,11 +282,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
-                    android:background="#81B383"
+                    android:background="#2A666E"
                     android:padding="5dp"
                     android:text="Time (hh:mm)"
                     android:textAlignment="center"
-                    android:textColor="#411988"
+                    android:textColor="#FFFFFF"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
@@ -300,11 +302,14 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
     </GridLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp">
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/floatingActionEdit"

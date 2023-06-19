@@ -5,24 +5,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#E7EFF6">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:background="#B0C6D8"
+        android:layout_marginBottom="10dp"
+        android:background="#ACB3BA"
+        android:padding="10dp"
         android:text="Cardiac Recorder"
-        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textSize="22sp"
         android:textStyle="bold|italic" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginBottom="5dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_baseline_add_24" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recordItems"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
+
     </ScrollView>
+
 </androidx.appcompat.widget.LinearLayoutCompat>
