@@ -80,7 +80,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
                 time.setText(measure.getTime());
 
                 //data from firebase
-                
+
                 dialog.show();
 
 
