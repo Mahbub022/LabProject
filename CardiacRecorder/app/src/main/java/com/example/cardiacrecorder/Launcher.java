@@ -17,6 +17,7 @@ public class Launcher extends AppCompatActivity {
             public void run() {
                 //startActivity(new Intent(Launcher.this, MainActivity.class));
                 startActivity(new Intent(getApplicationContext(), Register.class));
+                finish();
             }
         },3000);
     }
