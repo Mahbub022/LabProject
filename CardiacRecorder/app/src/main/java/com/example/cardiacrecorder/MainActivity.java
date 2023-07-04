@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
             SimpleDateFormat sdfDate = new SimpleDateFormat("dd-MM-yyyy");
             SimpleDateFormat sdfTime = new SimpleDateFormat("hh:mm");
 
-            Button save = myView.findViewById(R.id.floatingActionSave),
+            FloatingActionButton save = myView.findViewById(R.id.floatingActionSave),
                     cancel = myView.findViewById(R.id.floatingActionCancel);
 
             save.setOnClickListener((v) -> {
