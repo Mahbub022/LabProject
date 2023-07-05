@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         // Firebase
         mAuth = FirebaseAuth.getInstance();
         onlineUserId = mAuth.getUid();
-        reference = FirebaseDatabase.getInstance().getReference().child("Data").child(onlineUserId);
+        reference = FirebaseDatabase.getInstance().getReference().child("entries").child(onlineUserId);
 
         // read from database
         reference.addValueEventListener(new ValueEventListener() {

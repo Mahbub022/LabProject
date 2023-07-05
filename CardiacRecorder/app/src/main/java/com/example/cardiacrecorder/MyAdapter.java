@@ -46,11 +46,11 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         holder.time.setText(measure.getTime());
 
         // Normal pressures are systolic between 90 and 140 and diastolic between 60 and 90.
-        if(Integer.parseInt(measure.getSystolic()) >=90 && Integer.parseInt(measure.getSystolic()) <=140) {
+        if(Integer.parseInt(measure.getSystolic()) <90 || Integer.parseInt(measure.getSystolic()) >140) {
             holder.systolic.setTextColor(Color.RED);
         }
 
-        if(Integer.parseInt(measure.getDiastolic()) >=60 && Integer.parseInt(measure.getDiastolic()) <=90){
+        if(Integer.parseInt(measure.getDiastolic()) <60 || Integer.parseInt(measure.getDiastolic()) >90){
             holder.diastolic.setTextColor(0xFFFF0000);
         }
 
