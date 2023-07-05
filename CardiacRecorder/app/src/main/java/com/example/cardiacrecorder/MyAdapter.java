@@ -67,8 +67,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
                      heart = viewEdit.findViewById(R.id.editTextHeart),
                      comment = viewEdit.findViewById(R.id.editTextComment),
                      date = viewEdit.findViewById(R.id.editTextDate),
-                     time = viewEdit.findViewById(R.id.editTextTime),
-                     header = viewEdit.findViewById(R.id.textViewHeader);
+                     time = viewEdit.findViewById(R.id.editTextTime);
+
+             TextView header = viewEdit.findViewById(R.id.textViewHeader);
 
              FloatingActionButton save = viewEdit.findViewById(R.id.floatingActionSave),
                     cancel = viewEdit.findViewById(R.id.floatingActionCancel);
@@ -83,6 +84,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
                 time.setText(measure.getTime());
 
                 //data from firebase
+
 
                 dialog.show();
 

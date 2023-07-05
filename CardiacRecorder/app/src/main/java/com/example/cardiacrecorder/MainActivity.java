@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         // Firebase
         mAuth = FirebaseAuth.getInstance();
         onlineUserId = mAuth.getUid();
-        reference = FirebaseDatabase.getInstance().getReference().child("entries").child(onlineUserId);
+        reference = FirebaseDatabase.getInstance().getReference().child("Data").child(onlineUserId);
 
         // read from database
         reference.addValueEventListener(new ValueEventListener() {
@@ -161,9 +161,9 @@ public class MainActivity extends AppCompatActivity {
 
                         mAuth = FirebaseAuth.getInstance();
                         onlineUserId = mAuth.getCurrentUser().getUid();
-                        reference = FirebaseDatabase.getInstance().getReference().child("entries").child(onlineUserId);
+                        reference = FirebaseDatabase.getInstance().getReference().child("Data").child(onlineUserId);
                         String id = reference.push().getKey();
-                        Items data = new Items(systolicValue, diastolicValue, heartRateValue, commentValue, date, time);
+                        Items data = new Items(systolicValue, diastolicValue, heartRateValue, commentValue, date, time, id);
                         reference.child(id).setValue(data).addOnCompleteListener(new OnCompleteListener<Void>() {
                             @Override
                             public void onComplete(@NonNull Task<Void> task) {
