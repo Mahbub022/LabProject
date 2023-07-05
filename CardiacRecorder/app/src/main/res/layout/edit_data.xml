@@ -16,33 +16,38 @@
         android:layout_marginBottom="10dp"
         android:text="Header"
         android:textAlignment="center"
+        android:textColor="#0C0C0C"
         android:textSize="20sp"
         android:textStyle="bold|italic" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
         android:background="#FFFFFF"
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:padding="10dp"
             android:text="Systolic pressure (mm-Hg):"
-            android:textSize="16sp" />
+            android:textColor="#0B0A0A"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/editTextDiastolic"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="10dp"
             android:background="?attr/selectableItemBackground"
             android:ems="10"
-            android:hint="non-negative"
+            android:hint="non negative"
             android:inputType="number"
             android:padding="10dp"
             android:textSize="16sp" />
@@ -53,27 +58,31 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
         android:background="#FFFFFF"
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:padding="10dp"
             android:text="Diastolic pressure (mm-Hg):"
-            android:textSize="16sp" />
+            android:textColor="#0B0A0A"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/editTextSystolic"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="10dp"
             android:background="?attr/selectableItemBackground"
             android:ems="10"
-            android:hint="non-negative"
+            android:hint="non negative"
             android:inputType="number"
             android:padding="10dp"
             android:textSize="16sp" />
@@ -83,27 +92,31 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
         android:background="#FFFFFF"
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:padding="10dp"
             android:text="Heart Rate (beat/min):"
-            android:textSize="16sp" />
+            android:textColor="#0B0A0A"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/editTextHeart"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="10dp"
             android:background="?attr/selectableItemBackground"
             android:ems="10"
-            android:hint="non-negative"
+            android:hint="non negative"
             android:inputType="number"
             android:padding="10dp"
             android:textSize="16sp" />
@@ -112,7 +125,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
         android:background="#FFFFFF"
         android:orientation="horizontal">
 
@@ -122,7 +137,9 @@
             android:layout_marginLeft="10dp"
             android:padding="10dp"
             android:text="Comment :"
-            android:textSize="16sp" />
+            android:textColor="#0B0A0A"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
 
         <EditText
@@ -143,22 +160,26 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
         android:background="#FFFFFF"
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:padding="10dp"
             android:text="Date :"
-            android:textSize="16sp" />
+            android:textColor="#0B0A0A"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
 
         <EditText
             android:id="@+id/editTextDate"
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="10dp"
@@ -174,21 +195,25 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
         android:background="#FFFFFF"
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:padding="10dp"
             android:text="Time :"
-            android:textSize="16sp" />
+            android:textColor="#0B0A0A"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/editTextTime"
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="10dp"
@@ -213,6 +238,8 @@
             android:id="@+id/floatingActionSave"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:clickable="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -226,6 +253,8 @@
             android:id="@+id/floatingActionCancel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:clickable="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

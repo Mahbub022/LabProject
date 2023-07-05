@@ -3,7 +3,7 @@ package com.example.cardiacrecorder;
 public class Items {
     String systolic, diastolic,heartRate,comment,date,time;
 
-    public Items(){}
+    public Items(String systolicValue, String diastolicValue, String heartRateValue, String commentValue, String date, String s, String toString){}
     public Items(String systolic, String diastolic, String heartRate, String comment, String date, String time) {
         this.systolic = systolic;
         this.diastolic = diastolic;
