@@ -112,6 +112,9 @@ public class MainActivity extends AppCompatActivity {
                     dateText = myView.findViewById(R.id.editTextDate),
                     timeText = myView.findViewById(R.id.editTextTime);
 
+            TextView header = myView.findViewById(R.id.textViewHeader);
+            header.setText("Add the measurement");
+
             SimpleDateFormat sdfDate = new SimpleDateFormat("dd-MM-yyyy");
             SimpleDateFormat sdfTime = new SimpleDateFormat("hh:mm");
 
