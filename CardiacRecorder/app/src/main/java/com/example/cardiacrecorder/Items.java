@@ -1,9 +1,11 @@
 package com.example.cardiacrecorder;
 
 public class Items {
-    String systolic, diastolic,heartRate,comment,date,time, id;
 
-    public Items(){}
+    String systolic, diastolic, heartRate, comment, date, time, id;
+
+    public Items() {
+    }
 
     public String getId() {
         return id;
