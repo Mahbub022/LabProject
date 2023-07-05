@@ -1,6 +1,7 @@
 package com.example.cardiacrecorder;
 
 public class Items {
+
     String systolic, diastolic, heartRate, comment, date, time, id;
 
     public Items() {
@@ -71,4 +72,6 @@ public class Items {
     public void setTime(String time) {
         this.time = time;
     }
+
+
 }
