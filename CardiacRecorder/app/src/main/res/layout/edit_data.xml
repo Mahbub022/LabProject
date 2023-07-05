@@ -40,7 +40,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTextDiastolic"
+            android:id="@+id/editTextSystolic"
             android:layout_width="120dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="5dp"
@@ -75,7 +75,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTextSystolic"
+            android:id="@+id/editTextDiastolic"
             android:layout_width="120dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="5dp"

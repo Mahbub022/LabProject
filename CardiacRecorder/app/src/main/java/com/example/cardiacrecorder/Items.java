@@ -1,16 +1,27 @@
 package com.example.cardiacrecorder;
 
 public class Items {
-    String systolic, diastolic,heartRate,comment,date,time;
+    String systolic, diastolic, heartRate, comment, date, time, id;
 
-    public Items(String systolicValue, String diastolicValue, String heartRateValue, String commentValue, String date, String s, String toString){}
-    public Items(String systolic, String diastolic, String heartRate, String comment, String date, String time) {
+    public Items() {
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public Items(String systolic, String diastolic, String heartRate, String comment, String date, String time, String id) {
         this.systolic = systolic;
         this.diastolic = diastolic;
         this.heartRate = heartRate;
         this.comment = comment;
         this.date = date;
         this.time = time;
+        this.id = id;
     }
 
     public String getSystolic() {
