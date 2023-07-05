@@ -60,12 +60,22 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         holder.time.setText(measure.getTime());
 
         // Normal pressures are systolic between 90 and 140 and diastolic between 60 and 90.
-        if (Integer.parseInt(measure.getSystolic()) < 90 || Integer.parseInt(measure.getSystolic()) > 140) {
+        if (!(Integer.parseInt(measure.getSystolic()) >= 90 && Integer.parseInt(measure.getSystolic()) <= 140)) {
             holder.systolic.setTextColor(Color.RED);
         }
+        else
+        {
+            holder.systolic.setTextColor(Color.BLACK);
+        }
 
-        if (Integer.parseInt(measure.getDiastolic()) < 60 || Integer.parseInt(measure.getDiastolic()) > 90) {
+        if (!(Integer.parseInt(measure.getDiastolic()) >= 60 && Integer.parseInt(measure.getDiastolic()) <= 90))
+        {
             holder.diastolic.setTextColor(0xFFFF0000);
+        }
+
+        else
+        {
+            holder.diastolic.setTextColor(Color.BLACK);
         }
 
         //edit data
@@ -76,17 +86,11 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
                 final AlertDialog dialog = new AlertDialog.Builder(context).setView(viewEdit).create();
                 dialog.setCancelable(false);
 
-                EditText systolic = viewEdit.findViewById(R.id.editTextSystolic),
-                        diastolic = viewEdit.findViewById(R.id.editTextDiastolic),
-                        heart = viewEdit.findViewById(R.id.editTextHeart),
-                        comment = viewEdit.findViewById(R.id.editTextComment),
-                        dateText = viewEdit.findViewById(R.id.editTextDate),
-                        timeText = viewEdit.findViewById(R.id.editTextTime);
+                EditText systolic = viewEdit.findViewById(R.id.editTextSystolic), diastolic = viewEdit.findViewById(R.id.editTextDiastolic), heart = viewEdit.findViewById(R.id.editTextHeart), comment = viewEdit.findViewById(R.id.editTextComment), dateText = viewEdit.findViewById(R.id.editTextDate), timeText = viewEdit.findViewById(R.id.editTextTime);
 
                 TextView header = viewEdit.findViewById(R.id.textViewHeader);
 
-                FloatingActionButton save = viewEdit.findViewById(R.id.floatingActionSave),
-                        cancel = viewEdit.findViewById(R.id.floatingActionCancel);
+                FloatingActionButton save = viewEdit.findViewById(R.id.floatingActionSave), cancel = viewEdit.findViewById(R.id.floatingActionCancel);
 
                 //putting the current data
                 header.setText("Edit the measurement value");
@@ -184,21 +188,20 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
                 DatabaseReference reference = FirebaseDatabase.getInstance().getReference().child("Data").child(onlineUserId);
 
                 String id = measure.getId();
-                reference.child(id).removeValue()
-                        .addOnCompleteListener(new OnCompleteListener<Void>() {
+                reference.child(id).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
 
-                            @Override
-                            public void onComplete(@NonNull Task<Void> task) {
-                                if (task.isSuccessful()) {
-                                    Toast.makeText(context, "Data has been Deleted successfully", Toast.LENGTH_SHORT).show();
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        if (task.isSuccessful()) {
+                            Toast.makeText(context, "Data has been Deleted successfully", Toast.LENGTH_SHORT).show();
 
-                                } else {
-                                    String err = task.getException().toString();
-                                    Toast.makeText(context, "Failed: " + err, Toast.LENGTH_SHORT).show();
-                                }
-                                loader.dismiss();
-                            }
-                        });
+                        } else {
+                            String err = task.getException().toString();
+                            Toast.makeText(context, "Failed: " + err, Toast.LENGTH_SHORT).show();
+                        }
+                        loader.dismiss();
+                    }
+                });
 
             }
         });
