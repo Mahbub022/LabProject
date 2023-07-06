@@ -23,9 +23,18 @@ These key features make the Simple Data Recording App an effective tool for heal
 ## Layout, AddRecords and Panel:
 <div>
   <img src="https://github.com/RaiYan163/pictures/blob/main/4.jpg" alt="Fourth Image" width="300"/>
-  <img src="https://github.com/RaiYan163/pictures/blob/main/7.jpg" alt="Seventh Image" width="300" />
-  <img src="https://github.com/RaiYan163/pictures/blob/main/9.jpg" alt="Ninth Image" width="300" />
+  <img src="https://github.com/RaiYan163/pictures/blob/main/5.jpg" alt="Fifth Image" width="300"/>
+  <img src="https://github.com/RaiYan163/pictures/blob/main/6.jpg" alt="sixth Image" width="300"/>
+  
 </div>
+
+<div>
+<img src="https://github.com/RaiYan163/pictures/blob/main/7.jpg" alt="Seventh Image" width="300" />
+  <img src="https://github.com/RaiYan163/pictures/blob/main/8.jpg" alt="eighth Image" width="300" />
+  <img src="https://github.com/RaiYan163/pictures/blob/main/9.jpg" alt="Ninth Image" width="300" />  
+</div>
+
+
 
 ## Video of demonstration of app
 [Demonstration of app](https://drive.google.com/drive/folders/1NIQMxSC1rxcrnCNYuPeqmM2DNjFuwSJw)
