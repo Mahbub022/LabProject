@@ -37,6 +37,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth:22.0.0'
     implementation 'com.google.firebase:firebase-firestore:24.6.1'
     implementation 'com.google.firebase:firebase-database:20.2.2'
+    implementation fileTree(dir: 'C:\\Users\\Mahbub\\AppData\\Local\\Android\\Sdk\\platforms\\android-33', include: ['*.aar', '*.jar'], exclude: [])
 
 
     testImplementation 'junit:junit:4.13.2'
