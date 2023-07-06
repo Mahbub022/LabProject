@@ -26,6 +26,9 @@ These key features make the Simple Data Recording App an effective tool for heal
   <img src="https://github.com/RaiYan163/pictures/blob/main/7.jpg" alt="Seventh Image" width="300" />
   <img src="https://github.com/RaiYan163/pictures/blob/main/9.jpg" alt="Ninth Image" width="300" />
 </div>
+
+## Video of demonstration of app
+[Demonstration of app](https://drive.google.com/drive/folders/1NIQMxSC1rxcrnCNYuPeqmM2DNjFuwSJw)
  
 # Developers:
 Raiyan Ashraf (1907023) <br>
